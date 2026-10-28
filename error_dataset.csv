@@ -1,0 +1,21 @@
+error_message,code_context,error_type,repair_type
+expected semicolon before printf,int value = 10 then printf,syntax,insert_semicolon
+expected semicolon before return,int total = 10 then return,syntax,insert_semicolon
+expected semicolon after declaration,int count = 3,syntax,insert_semicolon
+expected semicolon before closing brace,int result = 7,syntax,insert_semicolon
+expected closing parenthesis before semicolon,printf call missing closing parenthesis,syntax,insert_parenthesis
+expected closing parenthesis before brace,if condition missing closing parenthesis,syntax,insert_parenthesis
+expected closing brace at end of input,int main opening brace,syntax,review_manually
+expected expression before semicolon,int x equals semicolon,syntax,review_manually
+undeclared identifier x,x equals 10,semantic,declare_variable
+undeclared identifier total,total equals a plus b,semantic,declare_variable
+variable used before declaration,result equals 9,semantic,declare_variable
+unknown variable name,count equals count plus 1,semantic,declare_variable
+incompatible types assignment,int x assigned string,semantic,review_type
+incompatible pointer assignment,int pointer p assigned integer,semantic,review_type
+invalid operands to binary expression,string added to integer,semantic,review_type
+unrecognized character,at sign at start of line,lexical,remove_invalid_character
+invalid token,foo at sign bar,lexical,remove_invalid_character
+unknown character,unexpected backtick,lexical,remove_invalid_character
+missing semicolon,statement missing terminator,syntax,insert_semicolon
+undeclared variable,assignment to name not declared,semantic,declare_variable
